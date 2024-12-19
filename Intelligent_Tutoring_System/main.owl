@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:sc="http://example.org/shape-calculator#">
+
+    <owl:Ontology rdf:about="http://example.org/shape-calculator"/>
+
+    <!-- Shape Class -->
+    <owl:Class rdf:about="http://example.org/shape-calculator#Shape"/>
+
+    <!-- Specific Shape Classes -->
+    <owl:Class rdf:about="http://example.org/shape-calculator#Square">
+        <rdfs:subClassOf rdf:resource="http://example.org/shape-calculator#Shape"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/shape-calculator#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://example.org/shape-calculator#Shape"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/shape-calculator#Triangle">
+        <rdfs:subClassOf rdf:resource="http://example.org/shape-calculator#Shape"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/shape-calculator#Sphere">
+        <rdfs:subClassOf rdf:resource="http://example.org/shape-calculator#Shape"/>
+    </owl:Class>
+
+    <!-- Data Properties -->
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasBase">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Triangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasHeight">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Triangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasSide">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Square"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasLength">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Rectangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasWidth">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Rectangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasRadius">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Sphere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasSide1">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Triangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasSide2">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Triangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://example.org/shape-calculator#hasSide3">
+        <rdfs:domain rdf:resource="http://example.org/shape-calculator#Triangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>
